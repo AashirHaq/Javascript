@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="header">
+        <h1>Quiz App</h1>
+    </div>
+    <div class="main">
+    <div id="page_wrap">
+    <button onclick="startQuiz()" id="startButton">Start Quiz</button>
+    <br><br><br>
+    <div class="timer">
+          <span id='minute'></span>:<span id="second"></span>
+    </div>
+    <br>
+    <div id="quizStarted">
+        <h3 id="questions"></h3>
+        <br>       
+        <ul>
+            <li><input type="radio" name="radio" class="radio" id="opt1" onclick="enableNextButton()"><i id="option1"></i></li>
+            <li><input type="radio" name="radio" class="radio" id="opt2" onclick="enableNextButton()"><i id="option2"></i></li>
+            <li><input type="radio" name="radio" class="radio" id="opt3" onclick="enableNextButton()"><i id="option3"></i></li>
+        </ul>
+        
+    <button onclick="next();" id="nextButton" class="nextButton">Next</button>
+    </div>
+    <score>
+        <p id="timeUp"></p>
+        <p class="finalScore">Your score is: <span id="score"></span>%</p>
+    </score>
+
+
+    
+
+    </div>
+    </div>
+    <div class="footer">
+    <p class="copyright">&copy; Copyrights by Aashir Haque</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
